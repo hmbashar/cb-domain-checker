@@ -1,0 +1,68 @@
+#cb-domain-form {background-color: #232c3b ;}
+#cb-wdc-style {max-width: 900px; margin: 0 auto;padding-top: 30px;padding-bottom: 30px;}
+#cb-wdc-style .small #Search{
+	height: 50px !important;
+    font-size: 20px !important;
+    border-radius: 43px;
+    border: 1px solid #fff;
+    padding: 12px 112px 12px 25px;
+    background-color: #fff;
+    color: #787878;
+    z-index: 0;
+}
+#cb-wdc-style .small .col-xs-10 {
+font-size: 14px !important;
+}
+#cb-wdc-style .pure-form{}
+#cb-wdc-style .pure-form .input-group{}
+#cb-wdc-style .pure-form .small{}
+#cb-wdc-style .pure-form .input-group-btn{position: absolute;
+    right: 48px;
+    top: 0px;}
+#cb-wdc-style .pure-form .input-group-btn #Submit{
+	box-shadow: none !important;
+    border-radius: 43px;
+    border: 0px solid #fdd700;
+    background-color: #fdd700;
+    color: #0d0b00;
+    font-size: 20px;
+    outline: none;
+    padding: 18px 20px;
+    font-weight: 500 !important;
+    font-family: sans-serif, Arial;
+    transition: all .15s ease-out;
+    text-transform: capitalize;}
+#cb-wdc-style .pure-form .input-group-btn #Submit:hover{
+    border: 0px solid #ff6c3a;transition: all .15s ease-out;
+    background-color: #ff6c3a;}
+#cb-wdc-style .domain-price ul{list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 0;}
+#cb-wdc-style .domain-price ul li{display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    font-family: sans-serif, Arial;
+    font-size: 24px;
+    padding: 0px 62px;
+    margin-top: 20px;
+    margin-bottom: 20px;}
+#cb-wdc-style .domain-price ul li:first-child{padding-left: 0px}
+#cb-wdc-style .domain-price ul li a{color: #c6cad2;text-decoration: none;font-size: 24px;
+    font-weight: 400;
+    font-family: sans-serif, Arial;}
+#cb-wdc-style .domain-price ul li:last-child{padding-right: 0px}
+#cb-wdc-style .domain-price ul li span{color: #ee5586;font-size: 20px;padding-right: 10px;
+    font-weight: 400;
+    font-family: sans-serif, Arial;}
+#cb-wdc-style .domain-price ul li sup{font-size: 18px;text-transform: uppercase;color: #c6cad2;}
+#cb-wdc-style .domain-details{}
+#cb-wdc-style .domain-details ul{list-style: none;margin: 0;padding: 0;text-align: left;}
+#cb-wdc-style .domain-details ul li{display: inline-block;font-size: 24px;
+	text-transform: capitalize;border-right: 1px solid #ff6c3a;padding-left: 5px;padding-right: 5px;font-weight: 500;}
+#cb-wdc-style .domain-details ul li a{color: #c6cad2;text-decoration: none;font-size: 20px;
+    font-weight: 400;transition: all .15s ease-out
+    font-family: sans-serif, Arial;}
+#cb-wdc-style .domain-details ul li a:hover{color: #ff6c3a;transition: all .15s ease-out}
+#cb-wdc-style .domain-details ul li:last-child{border-right: none;}
+.{}
