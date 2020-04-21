@@ -1,13 +1,16 @@
 <?php
 /*
 	Plugin Name: Cb Domain Checker
-	Plugin URI: 
+	Plugin URI: https://wordpress.org/plugins/cb-domain-checker
 	Description: Check domain name availability for all Top Level Domains using shortcode or widget with search.
-	Author: MD.NESAR MRIDHA
+	Author: Md Abul Bashar
 	Version: 1.0
-	Author URI:
+	Author URI: https://facebook.com/hmbashar
 	Text Domain: cbdc
- */// Don't call the file directly
+
+*/
+
+ // Don't call the file directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
 //define url

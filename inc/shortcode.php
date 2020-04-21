@@ -6,12 +6,16 @@ if ( !defined( 'ABSPATH' ) ) exit;
 function cb_domain_checker($attrs, $content = NULL) {
 	ob_start();
 	extract(shortcode_atts(array(
+
 		'post_type' =>'post'
-	),$attrs))
+
+	), $attrs));
 ?>
+
+
 <div id='cb-domain-form'>
 	<div id='cb-wdc-style' >
-		<form method='post' action='./' id='form' class='pure-form'> 
+		<form method='POST' action='' id='form' class='pure-form'> 
 
 			<div class='input-group small'>
      			<input type='text' placeholder="Find your perfect domain name" class='form-control' autocomplete='off' id='Search' name='domain' >
@@ -20,6 +24,18 @@ function cb_domain_checker($attrs, $content = NULL) {
  	 			</span>
     		</div>
 		</form>
+		            <?php
+                error_reporting(0);
+                if(isset($_POST['domain'])){
+                    $domain = $_POST['domain'];
+                    if ( gethostbyname($domain) != $domain ) {
+                        echo "<h3 style='color:red;' class='fail'>Domain Already Registered!</h3>";
+                    }
+                    else {
+                        echo "<h3 style='color:green;' class='success'>Hurry, your domain is available!, you can register it.</h3>";
+                    }
+                }
+            ?>
 		<div class="domain-price">
 			<ul>
 				<li><a href=""><span>.com</span><sup>tk</sup>950</a></li>
