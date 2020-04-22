@@ -156,3 +156,11 @@ display: block;
     text-align: center;
     margin: 0 auto;
 }
+.cb-domain-name-available{}
+.cb-domain-name-available p{color:green;font-size: 30px;
+text-align: center;}
+.cb-domain-name-available a {color:#ff6c3a;font-size: 30px;}
+.cb-domain-name-registered{}
+.cb-domain-name-registered p{color: red;
+font-size: 30px;
+text-align: center;}

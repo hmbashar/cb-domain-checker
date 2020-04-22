@@ -12,9 +12,8 @@ function cb_domain_checker($attrs, $content = NULL) {
 	), $attrs));
 ?>
 
-
-<div id='cb-domain-form'>
-	<div id='cb-domain-search' class="cb-domain-search">
+<div id="cb-domain-form">
+	<div id="cb-domain-search" class="cb-domain-search">
 		<!--Search Form -->
 		<div class="cb-domain-search-form">
 			<form method='GET' action="" id='form' class='pure-form'>

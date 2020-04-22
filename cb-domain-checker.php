@@ -32,17 +32,21 @@ add_action('wp_enqueue_scripts','cb_domain_checker_scripts');
 
 // Ajax action function
 function cb_domain_check_result() {
+
 	if(wp_verify_nonce( $_POST['data_nonce'], 'cb_domain_search' )) {
 	
 	   error_reporting(0);
 	    if(isset($_POST["domain"])){
 	        $domain = $_POST["domain"];
-	        if ( gethostbyname($domain) != $domain ) {
-	            echo '<h3 style="color:red;" class="fail">'.$domain.' Domain Already Registered!</h3>';
-	        }
-	        else {
-	            echo '<h3 style="color:green;" class="success">Hurry, your domain '.$domain.' is available!, you can register it.</h3>';
-	        }
+	        if ( gethostbyname($domain) != $domain ) : ?>
+				<div class="cb-domain-name-registered">	
+	            	<p>Sorry! <strong><?php echo esc_html($domain); ?></strong> Domain Already taken</p>
+	            </div>	        
+	        <?php else : ?>
+				<div class="cb-domain-name-available">					
+	            	<p>Congratulation Domain <strong><?php echo esc_html($domain); ?></strong> is available! <a href="">Place Order</a></p>
+				</div>
+	        <?php endif;
 	    }
    }
    exit;

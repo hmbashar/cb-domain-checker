@@ -20,8 +20,7 @@
 				$('.cb-domain-search-result').html(data);
 
 			}
-		});
-		console.log(CBDomainSearchNonce);
+		});		
 		return false
 	});
 })(jQuery);
