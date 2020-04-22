@@ -3,13 +3,27 @@
 if ( !defined( 'ABSPATH' ) ) exit;
 
 
-    error_reporting(0);
-    if(isset($_GET['domain'])){
-        $domain = $_GET['domain'];
-        if ( gethostbyname($domain) != $domain ) {
-            echo "<h3 style='color:red;' class='fail'>Domain Already Registered!</h3>";
+
+
+// Ajax action function
+function cb_domain_check_result() {
+
+    if(wp_verify_nonce( $_POST['data_nonce'], 'cb_domain_search' )) {
+          
+        if(isset($_POST["domain_name"])){
+            $domain = $_POST["domain_name"];
+            if ( gethostbyname($domain) != $domain ) : ?>
+                <div class="cb-domain-name-registered"> 
+                    <p>Sorry! <strong><?php echo esc_html($domain); ?></strong> Domain Already taken</p>
+                </div>          
+            <?php else : ?>
+                <div class="cb-domain-name-available">                  
+                    <p>Congratulation Domain <strong><?php echo esc_html($domain); ?></strong> is available! <a href="https://clients.linuxhostlab.com/cart.php?a=add&domain=register" target="_blank">Place Order</a></p>
+                </div>
+            <?php endif;
         }
-        else {
-            echo "<h3 style='color:green;' class='success'>Hurry, your domain is available!, you can register it.</h3>";
-        }
-    }
+   }
+   exit;
+}
+add_action('wp_ajax_cb_domain_check_result', 'cb_domain_check_result');
+add_action('wp_ajax_nopriv_cb_domain_check_result', 'cb_domain_check_result');

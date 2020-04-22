@@ -9,7 +9,7 @@
 			url:CbDomainSearch.ajaxurl,
 			data:{
 				action: 'cb_domain_check_result',
-				domain:CbDomainCheckInput,
+				domain_name:CbDomainCheckInput,
 				data_nonce:CBDomainSearchNonce,
 			},
 			beforeSend:function() {

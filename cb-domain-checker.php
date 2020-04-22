@@ -30,29 +30,6 @@ function cb_domain_checker_scripts(){
 add_action('wp_enqueue_scripts','cb_domain_checker_scripts');
 
 
-// Ajax action function
-function cb_domain_check_result() {
-
-	if(wp_verify_nonce( $_POST['data_nonce'], 'cb_domain_search' )) {
-	
-	   error_reporting(0);
-	    if(isset($_POST["domain"])){
-	        $domain = $_POST["domain"];
-	        if ( gethostbyname($domain) != $domain ) : ?>
-				<div class="cb-domain-name-registered">	
-	            	<p>Sorry! <strong><?php echo esc_html($domain); ?></strong> Domain Already taken</p>
-	            </div>	        
-	        <?php else : ?>
-				<div class="cb-domain-name-available">					
-	            	<p>Congratulation Domain <strong><?php echo esc_html($domain); ?></strong> is available! <a href="">Place Order</a></p>
-				</div>
-	        <?php endif;
-	    }
-   }
-   exit;
-}
-add_action('wp_ajax_cb_domain_check_result', 'cb_domain_check_result');
-add_action('wp_ajax_nopriv_cb_domain_check_result', 'cb_domain_check_result');
-
 //Include additional file
 require_once( CB_DOMAIN_CHECKER_PATH . 'inc/shortcode.php' );
+require_once( CB_DOMAIN_CHECKER_PATH . 'inc/domainCheck.php' );
