@@ -38,10 +38,10 @@ function cb_domain_check_result() {
 	    if(isset($_POST["domain"])){
 	        $domain = $_POST["domain"];
 	        if ( gethostbyname($domain) != $domain ) {
-	            echo '<h3 style="color:red;" class="fail">Domain Already Registered!</h3>';
+	            echo '<h3 style="color:red;" class="fail">'.$domain.' Domain Already Registered!</h3>';
 	        }
 	        else {
-	            echo '<h3 style="color:green;" class="success">Hurry, your domain is available!, you can register it.</h3>';
+	            echo '<h3 style="color:green;" class="success">Hurry, your domain '.$domain.' is available!, you can register it.</h3>';
 	        }
 	    }
    }

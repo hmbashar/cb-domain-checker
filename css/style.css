@@ -42,23 +42,33 @@ font-size: 14px !important;
     margin: 0;
     text-align: center;
     padding: 0;}
-#cb-domain-search .cb-domain-price ul li{display: inline-block;
+#cb-domain-search .cb-domain-price ul li{
+    display: inline-block;
     color: #fff;
     font-weight: 400;
     font-family: sans-serif, Arial;
-    font-size: 24px;
-    padding: 0px 62px;
-    margin-top: 20px;
-    margin-bottom: 20px;}
+    font-size: 16px;
+    padding: 0px 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
 #cb-domain-search .cb-domain-price ul li:first-child{padding-left: 0px}
-#cb-domain-search .cb-domain-price ul li a{color: #c6cad2;text-decoration: none;font-size: 24px;
+#cb-domain-search .cb-domain-price ul li a{
+    color: #c6cad2;
+    text-decoration: none;
+    font-size: 18px;
     font-weight: 400;
-    font-family: sans-serif, Arial;}
+    font-family: sans-serif, Arial;
+    }
 #cb-domain-search .cb-domain-price ul li:last-child{padding-right: 0px}
-#cb-domain-search .cb-domain-price ul li span{color: #ee5586;font-size: 20px;padding-right: 10px;
+#cb-domain-search .cb-domain-price ul li span{
+    color: #ee5586;
+    font-size: 16px;
+    padding-right: 10px;
     font-weight: 400;
-    font-family: sans-serif, Arial;}
-#cb-domain-search .cb-domain-price ul li sup{font-size: 18px;text-transform: uppercase;color: #c6cad2;}
+    font-family: sans-serif, Arial;
+    }
+#cb-domain-search .cb-domain-price ul li sup{font-size: 14px;text-transform: uppercase;color: #c6cad2;}
 #cb-domain-search .cb-domain-details{
     overflow: hidden;
     width: 100%;
