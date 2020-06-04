@@ -9,9 +9,10 @@ if ( !defined( 'ABSPATH' ) ) exit;
 function cb_domain_check_result() {
 
     if(wp_verify_nonce( $_POST['data_nonce'], 'cb_domain_search' )) {
-          
-        if(isset($_POST["domain_name"])){
-            $domain = $_POST["domain_name"];
+        
+        $domain = sanitize_text_field($_POST["domain_name"]);
+        
+        if(isset($domain)){           
             if ( gethostbyname($domain) != $domain ) : ?>
                 <div class="cb-domain-name-registered"> 
                     <p>Sorry! <strong><?php echo esc_html($domain); ?></strong> Domain Already taken</p>

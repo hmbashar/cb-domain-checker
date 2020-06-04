@@ -89,7 +89,7 @@ font-size: 14px !important;
     font-weight: 400;
     transition: all .15s ease-out;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 10px;
     font-family: sans-serif, Arial;
     }
 #cb-domain-search .cb-domain-details ul li a:hover{color: #ff6c3a;transition: all .15s ease-out}
@@ -164,3 +164,5 @@ text-align: center;}
 .cb-domain-name-registered p{color: red;
 font-size: 30px;
 text-align: center;}
+.cb-domain-price ul li:before, .cb-domain-details ul li:before{display: none;}
+.cb-domain-details ul li {padding: 5px 0;}
