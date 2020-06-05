@@ -27,6 +27,7 @@ function cb_domain_checker($attrs, $content = NULL) {
 		</div><!--/ Search Form -->
 		<!--Loader-->
 		<div class="cb_domain_check_loader"><div></div><div></div><div></div><div></div></div><!--/ Loader-->
+		<?php echo do_shortcode($content); ?>
 		<!--Domain Details Page-->
 		<div class="cb-domain-details">
 			<ul>
@@ -53,4 +54,3 @@ function cb_domain_checker($attrs, $content = NULL) {
 	return ob_get_clean();
 }
 add_shortcode('cb-domain-checker', 'cb_domain_checker');
-

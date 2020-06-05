@@ -19,7 +19,7 @@ function cb_domain_check_result() {
                 </div>          
             <?php else : ?>
                 <div class="cb-domain-name-available">                  
-                    <p>Congratulation Domain <strong><?php echo esc_html($domain); ?></strong> is available! <a href="https://clients.linuxhostlab.com/cart.php?a=add&domain=register" target="_blank">Place Order</a></p>
+                    <p>Congratulation Domain <strong><?php echo esc_html($domain); ?></strong> is available!</p>
                 </div>
             <?php endif;
         }
