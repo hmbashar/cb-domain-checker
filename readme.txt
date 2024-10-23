@@ -2,13 +2,13 @@
 Contributors: hmbashar
 Tags: domain checking, domain find, domain search, domain name register
 Requires at least: 4.6
-Tested up to: 5.4
-Stable tag: 1.0
+Tested up to: 6.6.2
+Stable tag: 1.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-
+You can use the plugin for domain name search on your WordPress website using the shortcode [cb-domain-checker]
 
 == Description ==
 

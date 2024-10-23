@@ -2,9 +2,9 @@
 /*
 	Plugin Name: CB Domain Checker
 	Plugin URI: https://wordpress.org/plugins/cb-domain-checker
-	Description: Check domain name availability for all Top Level Domains using shortcode or widget with search.
+	Description: Check domain name availability for all Top Level Domains using shortcode [cb-domain-checker] or widget with search. 
 	Author: Md Abul Bashar
-	Version: 1.0
+	Version: 1.1
 	Author URI: https://facebook.com/hmbashar
 	Text Domain: cbdc
 
