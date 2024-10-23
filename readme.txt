@@ -10,9 +10,32 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 You can use the plugin for domain name search on your WordPress website using the shortcode [cb-domain-checker]
 
+
 == Description ==
 
+You’re Welcome to <a href="https://github.com/hmbashar/cb-domain-checker">Github Repo</a> for features/pull request
+
 You can use the plugin for domain name search on your WordPress website using the shortcode [cb-domain-checker]
+
+## Pro Features
+You can show your domain extension with price per year using the [cb-domain-price] shortcode inside the main shortcode [cb-domain-checker]
+
+
+=== example ===
+``[cb-domain-checker][cb-domain-price][/cb-domain-checker]``
+
+
+=== attributes are supported with the domain price shortcode ===
+* name
+* currency
+* price
+
+=== example ===
+``[cb-domain-price name=".com" currency="$" price="10.5"]``
+
+=== Full shortcode like this ===
+``[cb-domain-checker][cb-domain-price name=".com" currency="tk" price="950"][cb-domain-price name=".net" currency="tk" price="1050"][cb-domain-price name=".org" currency="tk" price="1100"][cb-domain-price name=".com.bd" currency="tk" price="1250"][/cb-domain-checker]``
+
 
 
 == Installation ==
@@ -33,7 +56,7 @@ e.g.
 
 Just install the plugin then go to settings>CB Domain Check setting
 
-= I've Installed the plugin theb doesn't work =
+= I've Installed the plugin the doesn't work =
 
 Must be you need to installed and properly with configure
 
@@ -41,6 +64,9 @@ Must be you need to installed and properly with configure
 
 
 == Changelog ==
+
+= 1.1 =
+* Upgrade Security
 
 = 1.0 =
 * Just release new version.
